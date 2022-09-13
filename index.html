@@ -1,0 +1,1473 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <title>.Fix for Development</title>
+    <meta name='robots' content='max-image-preview:large' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link rel="alternate" type="application/rss+xml" title=".Fix for Development &raquo; Feed" href="http://consto.themezinho.net/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="دوت فكس &raquo; Comments Feed" href="http://consto.themezinho.net/comments/feed/" />
+    <script>
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/",
+            "ext": ".png",
+            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/",
+            "svgExt": ".svg",
+            "source": {
+                "concatemoji": "wp-includes\/js\/wp-emoji-release.min.js"
+            }
+        };
+        ! function(e, a, t) {
+            var n, r, o, i = a.createElement("canvas"),
+                p = i.getContext && i.getContext("2d");
+
+            function s(e, t) {
+                var a = String.fromCharCode;
+                p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0);
+                e = i.toDataURL();
+                return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL()
+            }
+
+            function c(e) {
+                var t = a.createElement("script");
+                t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t)
+            }
+            for (o = Array("flag", "emoji"), t.supports = {
+                    everything: !0,
+                    everythingExceptFlag: !0
+                }, r = 0; r < o.length; r++) t.supports[o[r]] = function(e) {
+                if (!p || !p.fillText) return !1;
+                switch (p.textBaseline = "top", p.font = "600 32px Arial", e) {
+                    case "flag":
+                        return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) ? !1 : !s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !s([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]);
+                    case "emoji":
+                        return !s([55357, 56424, 8205, 55356, 57212], [55357, 56424, 8203, 55356, 57212])
+                }
+                return !1
+            }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]);
+            t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function() {
+                t.DOMReady = !0
+            }, t.supports.everything || (n = function() {
+                t.readyCallback()
+            }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function() {
+                "complete" === a.readyState && t.readyCallback()
+            })), (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji), c(n.wpemoji)))
+        }(window, document, window._wpemojiSettings);
+    </script>
+    <style>
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='wp-block-library-css' href='wp-includes/css/dist/block-library/style.min.css' media='all' />
+    <link rel='stylesheet' id='contact-form-7-css' href='wp-content/plugins/contact-form-7/includes/css/styles.css' media='all' />
+    <link rel='stylesheet' id='ppress-frontend-css' href='wp-content/plugins/wp-user-avatar/assets/css/frontend.min.css' media='all' />
+    <link rel='stylesheet' id='ppress-flatpickr-css' href='wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.css' media='all' />
+    <link rel='stylesheet' id='ppress-select2-css' href='wp-content/plugins/wp-user-avatar/assets/select2/select2.min.css' media='all' />
+    <link rel='stylesheet' id='lineicons-css' href='wp-content/themes/consto/css/lineicons.css' media='all' />
+    <link rel='stylesheet' id='fancybox-css' href='wp-content/themes/consto/css/fancybox.min.css' media='all' />
+    <link rel='stylesheet' id='swiper-css' href='wp-content/themes/consto/css/swiper.min.css' media='all' />
+    <link rel='stylesheet' id='odometer-css' href='wp-content/themes/consto/css/odometer.min.css' media='all' />
+    <link rel='stylesheet' id='bootstrap-css' href='wp-content/themes/consto/css/bootstrap.min.css' media='all' />
+    <link rel='stylesheet' id='consto-main-style-css' href='wp-content/themes/consto/css/style.css' media='all' />
+    <link rel='stylesheet' id='consto-stylesheet-css' href='wp-content/themes/consto/style.css' media='all' />
+    <link rel='stylesheet' id='js_composer_front-css' href='wp-content/plugins/js_composer/assets/css/js_composer.min.css' media='all' />
+    <script src='wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+    <script src='wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+    <script src='wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.js' id='ppress-flatpickr-js'></script>
+    <script src='wp-content/plugins/wp-user-avatar/assets/select2/select2.min.js' id='ppress-select2-js'></script>
+    <script id='comments-js-extra'>
+        var comment_data = {
+            "name": "Name is required",
+            "email": "Email is required",
+            "comment": "Comment is required"
+        };
+    </script>
+    <script src='wp-content/themes/consto/js/comments.js' id='comments-js'></script>
+    <link rel="https://api.w.org/" href="http://consto.themezinho.net/wp-json/" />
+    <link rel="alternate" type="application/json" href="http://consto.themezinho.net/wp-json/wp/v2/pages/9" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://consto.themezinho.net/xmlrpc.php" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 5.7.6" />
+    <link rel="canonical" href="http://consto.themezinho.net/" />
+    <link rel='shortlink' href='http://consto.themezinho.net/' />
+    <link rel="alternate" type="application/json+oembed" href="http://consto.themezinho.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fconsto.themezinho.net%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="http://consto.themezinho.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fconsto.themezinho.net%2F&#038;format=xml" />
+    <style>
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style>
+    <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress." />
+    <style type="text/css" data-type="vc_shortcodes-custom-css">
+        .vc_custom_1592942836378 {
+            margin-right: 0px !important;
+            margin-left: 0px !important;
+        }
+
+        .vc_custom_1593194491489 {
+            margin-right: 0px !important;
+            margin-left: 0px !important;
+        }
+
+        .vc_custom_1592992313760 {
+            margin-right: 0px !important;
+            margin-left: 0px !important;
+        }
+
+        .vc_custom_1593002326565 {
+            margin-right: 0px !important;
+            margin-left: 0px !important;
+        }
+
+        .vc_custom_1593083239509 {
+            padding-right: 15px !important;
+            padding-left: 15px !important;
+        }
+
+        .vc_custom_1592942827926 {
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+
+        .vc_custom_1592942827926 {
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+
+        .vc_custom_1592919692743 {
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+
+        .vc_custom_1592992263819 {
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+
+        .vc_custom_1592996341482 {
+            margin-right: 0px !important;
+            margin-left: 0px !important;
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+
+        .vc_custom_1593002365639 {
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+
+        .vc_custom_1593002372445 {
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+
+        .vc_custom_1593002339240 {
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+
+        .vc_custom_1593083105658 {
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+
+        .vc_custom_1593083200046 {
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+
+        .vc_custom_1592996185410 {
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+
+        .vc_custom_1592996196129 {
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+
+        .vc_custom_1592996205555 {
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+
+        .vc_custom_1592996185410 {
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+
+        .vc_custom_1592996196129 {
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+
+        .vc_custom_1592996205555 {
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+
+        .vc_custom_1593020152184 {
+            margin-top: -200px !important;
+        }
+    </style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+<body class="home page-template page-template-page-builder page-template-page-builder-php page page-id-9 wpb-js-composer js-comp-ver-6.8.0 vc_responsive">
+    <div class="first-transition"></div>
+    <div class="page-transition"></div>
+    <div class="search-box">
+        <div class="inner">
+            <form action="../dotfix/">
+                <input type="search" placeholder="ادخل المعلومات التي تريدها" value="" name="s" id="s">
+                <input type="submit" value="بحث">
+            </form>
+
+        </div>
+    </div>
+    <aside class="side-widget">
+        <div class="inner">
+            <div class="logo"><img src="wp-content/themes/consto/images/logo.png"
+			alt="Consto | Industrial Construction Company WordPress Theme"></div>
+
+            <div class="hide-mobile">
+
+                <div id="custom_html-4" class="widget_text widget widget_custom_html">
+                    <div class="textwidget custom-html-widget">
+                        <p>تقوم شركتنا بتقديم خدمات صيانة مستقلة بالاجهزة المنزلية داخل المنزل باسعار منافسة و جودة عالية من خلال كادر ماهر و مدرب <u>عبر تطبيق محمول</u>بما يلبي احتياج السوق </p>
+                        <figure class="gallery"><img src="wp-content/uploads/2020/06/slide01.jpg" alt="Image"><img src="wp-content/uploads/2020/06/slide02.jpg" alt="Image"></figure>
+                        <h6 class="widget-title">العنوان</h6>
+                        <address class="address">
+      <p><br>
+        </p>
+      <p>+967 773 877 866</p>
+      </address>
+                        <h6 class="widget-title">تابعنا على</h6>
+                        <ul class="social-media">
+                            <li><a href="#">فيسبوك</a></li>
+                            <li><a href="#">تويتر</a></li>
+                            <li><a href="#">انستجرام</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- end hide-mobile -->
+            <div class="show-mobile">
+                <div class="custom-menu">
+                    <ul>
+                        <li> <a href="#">ِعربية</a> </li>
+                        <li> <a href="#">English</a> </li>
+                    </ul>
+                </div>
+                <div class="site-menu">
+                    <div class="menu-main-menu-container">
+                        <ul id="menu-main-menu" class="menu-horizontal">
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-340" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-340 nav-item"><a title="Consto" href="#" class="nav-link">دوت فكس</a>
+                                <ul class="dropdown" role="menu">
+                                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-333" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-333 nav-item"><a title="About Company" href="" class="dropdown-item">حول الشركة</a></li>
+                                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-331" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-331 nav-item"><a title="Core Values" href="" class="dropdown-item">الاسهم</a></li>
+                                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-330" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-330 nav-item"><a title="Leadership" href="" class="dropdown-item">العضوية</a></li>
+                                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-327" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-327 nav-item"><a title="Our History" href="" class="dropdown-item">تاريخنا</a></li>
+                                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-328" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-328 nav-item"><a title="Certificates" href="" class="dropdown-item">الشهادات</a></li>
+                                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-329" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-329 nav-item"><a title="Offices" href="" class="dropdown-item">المكتب</a></li>
+                                </ul>
+                            </li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-334 nav-item"><a title="Services" href="" class="nav-link">الخدمات</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-332" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-332 nav-item"><a title="Projects" href="" class="nav-link">المشاريع</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-337" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-337 nav-item"><a title="News" href="" class="nav-link">جديد</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-335" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-335 nav-item"><a title="Contact" href="" class="nav-link">التواصل</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end show-mobile -->
+            <small>© 2022 حقوق النشر و الملكية مع شركة دوت فكس</small> </div>
+        <!-- end inner -->
+    </aside>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><a href="#"><img src="wp-content/themes/consto/images/logo.png"
+			alt="Consto | Industrial Construction Company WordPress Theme"></a></div>
+            <div class="custom-menu">
+                <ul>
+                    <li> <a href="#">بالعربية</a> </li>
+                    <li> <a href="#">English</a> </li>
+                </ul>
+            </div>
+            <div class="site-menu">
+                <div class="menu-main-menu-container">
+                    <ul id="menu-main-menu-1" class="menu-horizontal">
+                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-340 nav-item"><a title="Consto" href="#" class="nav-link">دوت فكس</a>
+                            <ul class="dropdown" role="menu">
+                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-333 nav-item"><a title="About Company" href="" class="dropdown-item">حول الشركة</a></li>
+                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-331 nav-item"><a title="Core Values" href="" class="dropdown-item">الاسهم</a></li>
+                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-330 nav-item"><a title="Leadership" href="" class="dropdown-item">عضوية</a></li>
+                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-327 nav-item"><a title="Our History" href="" class="dropdown-item">تاريخنا</a></li>
+                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-328 nav-item"><a title="Certificates" href="" class="dropdown-item">الشهادات</a></li>
+                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-329 nav-item"><a title="Offices" href="" class="dropdown-item">المكتب</a></li>
+                            </ul>
+                        </li>
+                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-334 nav-item"><a title="Services" href="" class="nav-link">الخدمات</a></li>
+                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-332 nav-item"><a title="Projects" href="" class="nav-link">المشاريع</a></li>
+                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-337 nav-item"><a title="News" href="" class="nav-link">جديد</a></li>
+                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-335 nav-item"><a title="Contact" href="" class="nav-link">التواصل</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search"> <i class="lni lni-search-alt"></i> </div>
+
+            <div class="hamburger">
+                <div id="hamburger"> <span></span> <span></span> <span></span> </div>
+                <div id="cross"> <span></span> <span></span> </div>
+            </div>
+            <a href="" class="navbar-button"> 
+		 <span>Login Or Signup</span></a>
+
+        </div>
+    </nav>
+    <main>
+        <section class="content-section no-spacing">
+            <div class="vc_row wpb_row vc_row-fluid vc_custom_1592942836378">
+                <div class="wpb_column vc_column_container vc_col-sm-12">
+                    <div class="vc_column-inner vc_custom_1592942827926">
+                        <div class="wpb_wrapper">
+                            <header class="slider white-space-bottom">
+                                <div class="container">
+                                    <div class="swiper-container slider-content">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="inner">
+                                                    <h2>
+                                                    تطوير <b>  ,صيانة</b>,تدوير</h2>
+                                                    <p>
+                                                        الامان و الاسرع في التصميم و الصيانة</p>
+                                                    <a href=""> تصفح خدماتنا <i class="lni lni-arrow-right"></i></a>
+                                                </div>
+                                                <!-- end inner -->
+
+                                            </div>
+                                            <!-- end swiper-slide -->
+
+                                            <div class="swiper-slide">
+                                                <div class="inner">
+                                                    <h2>
+                                                        All <b>Smart</b> Apartments </h2>
+                                                    <p>
+                                                        We build ambient living spaces for families </p>
+                                                    <a href="/project/quark-life-homes/"> SEE ALL CATALOGUE  <i class="lni lni-arrow-right"></i></a>
+                                                </div>
+                                                <!-- end inner -->
+
+                                            </div>
+                                            <!-- end swiper-slide -->
+
+                                            <div class="swiper-slide">
+                                                <div class="inner">
+                                                    <h2>
+                                                        Mock <b>Living</b> Environment </h2>
+                                                    <p>
+                                                        We build ambient living spaces for families </p>
+                                                    <a href="/project/quark-life-homes/"> DISCOVER CONSTO  <i class="lni lni-arrow-right"></i></a>
+                                                </div>
+                                                <!-- end inner -->
+
+                                            </div>
+                                            <!-- end swiper-slide -->
+
+                                        </div>
+                                        <!-- end swiper-wrapper -->
+                                        <div class="controls">
+                                            <div class="swiper-pagination"></div>
+                                            <!-- end swiper-pagination -->
+                                            <div class="button-prev"><i class="lni lni-arrow-left"></i></div>
+                                            <!-- end button-prev -->
+                                            <div class="button-next"><i class="lni lni-arrow-right"></i></div>
+                                            <!-- end button-next -->
+                                        </div>
+                                        <!-- end controls -->
+                                    </div>
+                                    <!-- end swiper-container -->
+
+                                    <div class="swiper-container slider-main">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="slide-image" data-background="wp-content/uploads/2020/06/slide01.jpg"><img src="wp-content/uploads/2020/06/0deec720000b2066289b9f2a989b5194.gif"></div>
+                                                
+                                            </div>
+                                            <!-- end swiper-slide -->
+
+                                            <div class="swiper-slide">
+                                                <div class="slide-image" data-background="wp-content/uploads/2020/06/slide02.jpg"></div>
+                                            </div>
+                                            <!-- end swiper-slide -->
+
+                                            <div class="swiper-slide">
+                                                <div class="slide-image" data-background="wp-content/uploads/2020/06/slide03.jpg"></div>
+                                            </div>
+                                            <!-- end swiper-slide -->
+
+
+
+                                        </div>
+                                        <!-- end swiper-wrapper -->
+                                        <div class="header-box"> <b>0</b> <small> </small> </div>
+                                        <!-- end header-box -->
+                                    </div>
+                                    <!-- end swiper-container -->
+
+                                </div>
+                                <!-- end container -->
+
+                            </header>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="vc_row wpb_row vc_row-fluid section-note vc_custom_1593194491489">
+            <div class="wpb_column vc_column_container vc_col-sm-12">
+                <div class="vc_column-inner vc_custom_1592942827926">
+                    <div class="wpb_wrapper">
+                        <div class="wpb_text_column wpb_content_element ">
+                            <div class="wpb_wrapper">
+                                <p>هذا الجز مختص في الخدمات <u> اختر موع الخدمة</u>الخدمات التي نقدمه</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="content-section">
+            <div class="container">
+                <div class="vc_row wpb_row vc_row-fluid">
+                    <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-4">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+                                <div class="icon-content ">
+                                    <figure> <img src="wp-content/uploads/2020/06/icon01.png" alt="icon01"> </figure>
+                                    <h3>خدمة الصيانة المنزلية</h3>
+                                    <small>انقر على الايقونة حتى تتمكن من الانتقال الى صفحة الخدمة و تختار منطقتك و نوع عطلك</small> <a href="">+</a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-4">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+                                <div class="icon-content ">
+                                    <figure> <img src="wp-content/uploads/2020/06/icon02.png" alt="icon02"> </figure>
+                                    <h3>شراء القطع التالفة و استبدالة</h3>
+                                    <small>نقوم بعطائك حقوق مقابل اخذ الجهاز التالف لتتمكن من التوفير</small> <a href="">+</a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-4">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+                                <div class="icon-content ">
+                                    <figure> <img src="wp-content/uploads/2020/06/icon03.png" alt="icon03"> </figure>
+                                    <h3>تطوير الاجهزة و تصميم المعدات</h3>
+                                    <small>نمتلك اجهزة خارقة في التصميم و التطوير عبر برنامج سوليدورك</small> <a href="">+</a> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section no-spacing">
+            <div class="vc_row wpb_row vc_row-fluid vc_custom_1592992313760">
+                <div class="wpb_column vc_column_container vc_col-sm-12">
+                    <div class="vc_column-inner">
+                        <div class="wpb_wrapper">
+                            <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="vc_column-inner">
+                                        <div class="wpb_wrapper">
+                                            <div class="section-title   ">
+                                                <h6>سر </h6>
+                                                <h2>خدماتنا و جودتنا<br /> سر تميز</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vc_row wpb_row vc_inner vc_row-fluid vc_row-o-content-middle vc_row-flex">
+                                <div class="wpb_column vc_column_container vc_col-sm-6">
+                                    <div class="vc_column-inner vc_custom_1592919692743">
+                                        <div class="wpb_wrapper">
+                                            <figure class="side-image ">
+
+                                                <img src="wp-content/uploads/2020/06/author00.jpg" alt="Image">
+
+                                            </figure>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wpb_column vc_column_container vc_col-sm-6">
+                                    <div class="vc_column-inner vc_custom_1592992263819">
+                                        <div class="wpb_wrapper">
+                                            <div class="side-content ">
+
+                                                <h5>خطاب مع المستقبل</h5>
+
+                                                <h5>هناك دائما حل هندسي افضل يجعل من الممكن الجمع بين تصميم عالي الجودة و منخفض التكلفة في نفس ان واحد</h5>
+                                                <figure> <img src="wp-content/uploads/2020/06/signature.png" alt="Dennis Rodman"> </figure>
+
+                                                <h6>الرئيس التنفيذي</h6>
+
+                                                <small>شركة دوت فكس</small>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section">
+            <div class="container">
+                <div class="vc_row wpb_row vc_row-fluid">
+                    <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+
+
+
+
+
+                                <div class="counter-box ">
+
+                                    <span class="odometer" data-count="33" data-status="yes">0.1</span>
+                                    <span class="value">%</span>
+
+
+
+                                    <h6>يوجد اسهل حاليا للبيع</h6>
+
+
+                                    <p>سعر السهم هو 500 ريال يمني فقط </p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+
+
+
+
+
+                                <div class="counter-box ">
+
+                                    <span class="odometer" data-count="2021" data-status="yes">15</span>
+                                    <span class="value">-%</span>
+
+
+
+                                    <h6>نسبة التخفيض</h6>
+
+
+                                    <p>كون من الزبائن المهمين لدينا </p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+
+
+
+
+
+                                <div class="counter-box ">
+
+                                    <span class="odometer" data-count="247" data-status="yes">50</span>
+                                    <span class="value">m²</span>
+
+
+
+                                    <h6>مساحة العمل الخاص بنا في الشركة</h6>
+
+
+                                    <p>تمتع مع وظيفة سهله و جيدة في الدخل </p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+
+
+
+
+
+                                <div class="counter-box ">
+
+                                    <span class="odometer" data-count="529" data-status="yes">0.5</span>
+                                    <span class="value">+</span>
+
+
+
+                                    <h6>زيادة في الارباح</h6>
+
+
+                                    <p>عند شرائك اسهم بمقدار 1% نقوم بتزيد ربحك بنسبة</p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section white-space-bottom" style="background-color: #f7f6f1;">
+            <div class="vc_row wpb_row vc_row-fluid vc_custom_1593002326565">
+                <div class="wpb_column vc_column_container vc_col-sm-12">
+                    <div class="vc_column-inner">
+                        <div class="wpb_wrapper">
+                            <div class="container">
+                                <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1592996341482">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-7">
+                                        <div class="vc_column-inner vc_custom_1593002365639">
+                                            <div class="wpb_wrapper">
+                                                <div class="section-title   text-left  ">
+                                                    <h6> مشاريعنا </h6>
+                                                    <h2>مشاريعنا المكتملة</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-5">
+                                        <div class="vc_column-inner vc_custom_1593002372445">
+                                            <div class="wpb_wrapper">
+                                                <div class="wpb_text_column wpb_content_element ">
+                                                    <div class="wpb_wrapper">
+                                                        <p></p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="vc_column-inner vc_custom_1593002339240">
+                                        <div class="wpb_wrapper">
+                                            <div class="swiper-container project-slider ">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                       <!-- <figure class="project-box"> <a href=""> <img src="wp-content/uploads/2020/06/nhyn.png" alt="Life Science Center"></a>
+                                                            <figcaption>
+                                                                <h5> Life Science Center</h5>
+                                                                <p>The building opened in 2020 and includes more than 120+ flats</p>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <figure class="project-box"> <a href=""> <img src="wp-content/uploads/2020/06/cdc.png" alt="Ankamall Shopping Center"></a>
+                                                            <figcaption>
+                                                                <h5> Ankamall Shopping Center</h5>
+                                                                <p>The building opened in 2020 and includes more than 120+ flats</p>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <figure class="project-box"> <a href=""> <img src="wp-content/uploads/2020/06/slide03.jpg" alt="Ataturk Center Library"></a>
+                                                            <figcaption>
+                                                                <h5> Ataturk Center Library</h5>
+                                                                <p>The building opened in 2020 and includes more than 120+ flats</p>
+                                                            </figcaption>
+                                                        </figure>-->
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-pagination"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section">
+            <div class="container">
+                <div class="vc_row wpb_row vc_row-fluid vc_custom_1593083239509">
+                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+                                <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1593083105658">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner vc_custom_1593083200046">
+                                            <div class="wpb_wrapper">
+                                                <div class="section-title   text-left  ">
+                                                    <h6> مناطق </h6>
+                                                    <h2>اماكن تواجدنا</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                    <div class="wpb_column vc_column_container vc_col-sm-4">
+                                        <div class="vc_column-inner vc_custom_1592996185410">
+                                            <div class="wpb_wrapper">
+
+
+                                                <a href="" class="sector-box ">
+	
+	<span>صنعاء</span> <i class="lni lni-arrow-right"></i>
+  
+ 
+
+</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wpb_column vc_column_container vc_col-sm-4">
+                                        <div class="vc_column-inner vc_custom_1592996196129">
+                                            <div class="wpb_wrapper">
+
+
+                                                <a href="" class="sector-box ">
+	
+	<span>اب</span> <i class="lni lni-arrow-right"></i>
+  
+ 
+
+</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wpb_column vc_column_container vc_col-sm-4">
+                                        <div class="vc_column-inner vc_custom_1592996205555">
+                                            <div class="wpb_wrapper">
+
+
+                                                <a href="" class="sector-box ">
+	
+	<span>عدن</span> <i class="lni lni-arrow-right"></i>
+  
+ 
+
+</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                    <div class="wpb_column vc_column_container vc_col-sm-4">
+                                        <div class="vc_column-inner vc_custom_1592996185410">
+                                            <div class="wpb_wrapper">
+
+
+                                                <a href="" class="sector-box ">
+	
+	<span>تعز</span> <i class="lni lni-arrow-right"></i>
+  
+ 
+
+</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wpb_column vc_column_container vc_col-sm-4">
+                                        <div class="vc_column-inner vc_custom_1592996196129">
+                                            <div class="wpb_wrapper">
+
+
+                                                <a href="" class="sector-box ">
+	
+	<span>حضرموت</span> <i class="lni lni-arrow-right"></i>
+  
+ 
+
+</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wpb_column vc_column_container vc_col-sm-4">
+                                        <div class="vc_column-inner vc_custom_1592996205555">
+                                            <div class="wpb_wrapper">
+
+
+                                                <a href="" class="sector-box ">
+	
+	<span>ماليزيا</span> <i class="lni lni-arrow-right"></i>
+  
+ 
+
+</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section bg-image" style="background: url(wp-content/uploads/2020/06/header-pattern.png) center no-repeat; background-color: #0b0b0b;">
+            <div class="container">
+                <div id="lisbon" class="vc_row wpb_row vc_row-fluid">
+                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+                                <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner">
+                                            <div class="wpb_wrapper">
+                                                <div class="section-title   text-left  " style="color:rgb(255, 255, 255);">
+                                                    <h6> الفواتير </h6>
+                                                    <h2>مركز الفواتير</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-10">
+                                        <div class="vc_column-inner">
+                                            <div class="wpb_wrapper">
+                                                <form class="calculator-form">
+                                                    <div class="row">
+                                                        <div class="form-group col-md-6">
+                                                            <p> الخط الزمني</p>
+                                                            <div class="range-slider">
+                                                                <input class="range-slider__range" id="value1" type="range" value="30" min="1" max="30" step="1">
+                                                                <span class="range-slider__value">0</span> </div>
+                                                            <!-- edn range-slider -->
+                                                        </div>
+                                                        <!-- end form-group -->
+                                                        <div class="form-group col-md-6">
+                                                            <p>الفواتير السابقة</p>
+                                                            <div class="range-slider">
+                                                                <input class="range-slider__range" id="value2" type="range" value="5000" min="0" max="10000" step="1000">
+                                                                <span class="range-slider__value">0</span> </div>
+                                                            <!-- edn range-slider -->
+                                                        </div>
+                                                        <!-- end form-group -->
+                                                        <div class="form-group col-lg-4 col-md-6">
+                                                            <p>نوع الفاتورة :</p>
+                                                            <select id="value3">
+				<option value="0">اختر</option>
+                <option value="10000">صيانة كهربائية</option>
+                <option value="15000">شراء اجهزة تالفة</option>
+                <option value="20000">تطوير</option>
+              </select>
+                                                        </div>
+                                                        <!-- end form-group -->
+
+                                                        <div class="form-group col-lg-4 col-md-6">
+                                                            <p>المنطقة :</p>
+                                                            <select id="value4">
+				<option value="0">اختر</option>
+                <option value="10000">صنعاء</option>
+                <option value="15000">اب</option>
+                <option value="20000">عدن</option>
+              </select>
+                                                        </div>
+                                                        <!-- end form-group -->
+
+                                                        <div class="form-group col-lg-4 col-md-12">
+                                                            <p>النسبة الضريبية :</p>
+                                                            <div class="yes-no" id="yes-no">
+                                                                <input type="radio" name="rdo" id="yes" value="15000" checked />
+                                                                <input type="radio" name="rdo" id="no" value="0" />
+                                                                <div class="switch">
+                                                                    <label for="yes">يوجد</label>
+                                                                    <label for="no">لا يوجد</label>
+                                                                    <span></span> </div>
+                                                            </div>
+                                                            <!-- end yes-no -->
+                                                        </div>
+                                                        <!-- end form-group 
+                                                        <div class="form-group col-12" id="checkboxes">
+                                                            <p>Building Materials</p>
+                                                            <input type="checkbox" id="one" value="1000" checked>
+                                                            <label class="custom-checkbox" for="one"> Cellular Concrete </label>
+                                                            <input type="checkbox" id="two" value="1500">
+                                                            <label class="custom-checkbox" for="two"> Ventilated Brick </label>
+                                                            <input type="checkbox" id="three" value="2000">
+                                                            <label class="custom-checkbox" for="three"> Wood </label>
+                                                            <input type="checkbox" id="four" value="2500">
+                                                            <label class="custom-checkbox" for="four"> Prefabricated </label>
+                                                        </div>
+                                                         end form-group -->
+                                                        <div class="form-group col-12">
+                                                            <div class="info-box"> <i class="lni lni-checkmark-circle"></i> ملاحظة مركز الفواتير قيد التطوير. </div>
+                                                            <!-- end info-box -->
+                                                            <div class="price-box"> <small>الاسعار التي تم انفاقها :</small> <span>ريال يمني <b id="result">0</b></span> </div>
+                                                            <!-- end price-box -->
+                                                        </div>
+                                                        <!-- end form-group -->
+                                                    </div>
+                                                    <!-- end form row -->
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section">
+            <div class="container">
+                <div class="vc_row wpb_row vc_row-fluid">
+                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+                                <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner">
+                                            <div class="wpb_wrapper">
+                                                <div class="section-title   ">
+                                                    <h6> فريق </h6>
+                                                    <h2>فريق دوت فكس </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                    <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-md-1/5">
+                                        <div class="vc_column-inner">
+                                            <div class="wpb_wrapper">
+                                                <div class="sales-team ">
+                                                    <figure> <img src="wp-content/uploads/2020/06/IMG-20220307-WA0006.jpg" alt="Chief Financial Offer"> </figure>
+                                                    <div class="infos">
+                                                        <h6>الحسن المزحاني</h6>
+                                                        <small>مطور المنتاجات في دوت فكس</small>
+                                                        <b>+967 772 264 776</b>
+                                                        <ul>
+                                                            <li> <a href="#"> <i class="lni lni-facebook-filled"></i></a> </li>
+                                                            <li> <a href="#"> <i class="lni lni-twitter-original"></i></a> </li>
+                                                            <li> <a href="#"> <i class="lni lni-instagram-original"></i></a> </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-md-1/5">
+                                        <div class="vc_column-inner">
+                                            <div class="wpb_wrapper">
+                                                <div class="sales-team ">
+                                                    <figure> <img src="wp-content/uploads/2020/06/author00.jpg" alt="Chief Financial Offer"> </figure>
+                                                    <div class="infos">
+                                                        <h6>محمد حبيب</h6>
+                                                        <small>الرئيس التنفيذي</small>
+                                                        <b>+967 775 568 626</b>
+                                                        <ul>
+                                                            <li> <a href="#"> <i class="lni lni-facebook-filled"></i></a> </li>
+                                                            <li> <a href="#"> <i class="lni lni-twitter-original"></i></a> </li>
+                                                            <li> <a href="#"> <i class="lni lni-instagram-original"></i></a> </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-md-1/5">
+                                        <div class="vc_column-inner">
+                                            <div class="wpb_wrapper">
+                                                <div class="sales-team ">
+                                                    <figure> <img src="wp-content/uploads/2020/06/ca92c11b1ad9c77b04ab4fbe508982f2.jpg" alt="Chief Financial Offer"> </figure>
+                                                    <div class="infos">
+                                                        <h6>اميرة سعدان</h6>
+                                                        <small>مدير التسويق</small>
+                                                        <b>+967 770 187 846</b>
+                                                        <ul>
+                                                            <li> <a href="#"> <i class="lni lni-facebook-filled"></i></a> </li>
+                                                            <li> <a href="#"> <i class="lni lni-twitter-original"></i></a> </li>
+                                                            <li> <a href="#"> <i class="lni lni-instagram-original"></i></a> </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-md-1/5">
+                                        <div class="vc_column-inner">
+                                            <div class="wpb_wrapper">
+                                                <div class="sales-team ">
+                                                    <figure> <img src="wp-content/uploads/2020/06/1656259752648.jpg" alt="Chief Financial Offer"> </figure>
+                                                    <div class="infos">
+                                                        <h6>عبدالله حسانين</h6>
+                                                        <small>المدير التنفيذي المالي</small>
+                                                        <b>+967 773 877 866</b>
+                                                        <ul>
+                                                            <li> <a href="#"> <i class="lni lni-facebook-filled"></i></a> </li>
+                                                            <li> <a href="#"> <i class="lni lni-twitter-original"></i></a> </li>
+                                                            <li> <a href="#"> <i class="lni lni-instagram-original"></i></a> </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-md-1/5">
+                                        <div class="vc_column-inner">
+                                            <div class="wpb_wrapper">
+                                                <div class="sales-team ">
+                                                    <figure> <img src="wp-content/uploads/2020/06/uo99.jpg" alt="Chief Financial Offer"> </figure>
+                                                    <div class="infos">
+                                                        <h6>عياش حبيب</h6>
+                                                        <small>مدير الموارد البشرية</small>
+                                                        <b>+967 778 261 452</b>
+                                                        <ul>
+                                                            <li> <a href="#"> <i class="lni lni-facebook-filled"></i></a> </li>
+                                                            <li> <a href="#"> <i class="lni lni-twitter-original"></i></a> </li>
+                                                            <li> <a href="#"> <i class="lni lni-instagram-original"></i></a> </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-md-1/5">
+                                        <div class="vc_column-inner">
+                                            <div class="wpb_wrapper">
+                                                <div class="sales-team ">
+                                                    <figure> <img src="wp-content/uploads/2020/06/IMG-20220827-WA0014.jpg" alt="Chief Financial Offer"> </figure>
+                                                    <div class="infos">
+                                                        <h6>زيد الرداعي</h6>
+                                                        <small>مدير المبيعات</small>
+                                                        <b>+967 712 880 668</b>
+                                                        <ul>
+                                                            <li> <a href="#"> <i class="lni lni-facebook-filled"></i></a> </li>
+                                                            <li> <a href="#"> <i class="lni lni-twitter-original"></i></a> </li>
+                                                            <li> <a href="#"> <i class="lni lni-instagram-original"></i></a> </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section white-space-top no-spacing" style="background-color: #f7f6f1;">
+            <div class="container">
+                <div class="vc_row wpb_row vc_row-fluid">
+                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+                                <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner">
+                                            <div class="wpb_wrapper">
+
+
+                                                <div class="video-box ">
+
+
+
+
+                                                    <a href="wp-content/uploads/2020/06/Meet Google Fi(360P).mp4" data-fancybox data-width="640" data-height="360" class="play-btn"><i class="lni lni-play"></i></a>
+                                                    <video src="wp-content/uploads/2020/06/Meet Google Fi(360P).mp4" autoplay muted loop playsinline></video>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner vc_custom_1593020152184">
+                                            <div class="wpb_wrapper">
+                                                <div class="testimonials-slider ">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="testimonial">
+                                                                <p>
+                                                                 الحياة سهله مع شركة دوت فكس استخدم تطبيق دوت فكس و اطلب الصيانة الفورية و باقل الاسعار تحت ضمان الجودة و اسعار معقولة شاهد فيديو يوضح معنا التطبيق </p>
+                                                                <i class="lni lni-quotation"></i>
+                                                                <h6>انتاج فريق التطوير</h6>
+                                                                <small>شركة دوت فكس</small> </div>
+                                                        </div>
+
+                                                        <div class="swiper-slide">
+                                                            <div class="testimonial">
+                                                                <p>
+                                                                    Consto was completely respectful of the building and its surroundings - they immediately became part of our team and they know teamwork! They kept the jobsite clean and safe; working with Consto is nothing short of a first class experience! </p>
+                                                                <i class="lni lni-quotation"></i>
+                                                                <h6>Danny O&#039;Brain</h6>
+                                                                <small>Life Touch LLC</small> </div>
+                                                        </div>
+
+                                                        <div class="swiper-slide">
+                                                            <div class="testimonial">
+                                                                <p>
+                                                                    Thank you for all of your hard work on our project…I seriously don’t know how you did it but it came together SO WELL. I know we are a particular bunch and want things a certain way but you guys did such an amazing job! </p>
+                                                                <i class="lni lni-quotation"></i>
+                                                                <h6>Christina Anens</h6>
+                                                                <small>Life Touch LLC</small> </div>
+                                                        </div>
+
+                                                        <div class="swiper-slide">
+                                                            <div class="testimonial">
+                                                                <p>
+                                                                    I was truly impressed with Consto’s quality workmanship and the final product. Consto provided an outstanding team that completed our project on-time and on schedule with no disruption to the staff. </p>
+                                                                <i class="lni lni-quotation"></i>
+                                                                <h6>Jack Danial</h6>
+                                                                <small>Life Touch LLC</small> </div>
+                                                        </div>
+
+                                                    </div>
+
+
+
+                                                    <div class="controls">
+                                                        <div class="button-prev"><i class="lni lni-arrow-left"></i></div>
+
+                                                        <div class="button-next"><i class="lni lni-arrow-right"></i></div>
+
+                                                    </div>
+
+
+
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section" style="background-color: #f7f6f1;">
+            <div class="container">
+                <p>شوركانا في العمل</p>
+                <div class="vc_row wpb_row vc_row-fluid">
+                    <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-md-2 vc_col-xs-6">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+                                <figure class="logo-item ">
+                                    <h6> <img src="wp-content/uploads/2020/06/saba.png" alt="Image"> </h6>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                   <!-- <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-md-2 vc_col-xs-6">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+                                <figure class="logo-item ">
+                                    <h6> <img src="wp-content/uploads/2020/06/logo02.png" alt="Image"> </h6>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>-->
+                    <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-md-2 vc_col-xs-6">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+                                <figure class="logo-item ">
+                                    <h6> <img src="wp-content/uploads/2020/06/INJAZ Yemen_Full-Color Lockup-2.png" alt="Image"> </h6>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                   <!--<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-md-2 vc_col-xs-6">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+                                <figure class="logo-item ">
+                                    <h6> <img src="wp-content/uploads/2020/06/logo04.png" alt="Image"> </h6>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-md-2 vc_col-xs-6">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+                                <figure class="logo-item ">
+                                    <h6> <img src="wp-content/uploads/2020/06/logo05.png" alt="Image"> </h6>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-md-2 vc_col-xs-6">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+                                <figure class="logo-item ">
+                                    <h6> <img src="wp-content/uploads/2020/06/logo06.png" alt="Image"> </h6>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </section>
+        <section class="content-section">
+            <div class="container">
+                <div class="vc_row wpb_row vc_row-fluid">
+                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+                                <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner">
+                                            <div class="wpb_wrapper">
+                                                <div class="section-title   ">
+                                                    <h6> ما الجديد </h6>
+                                                    <h2>عنواين جديدة</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner">
+                                            <div class="wpb_wrapper">
+                                                <ul class="recent-news">
+                                                    <li>
+                                                        <div class="recent-news-box ">
+                                                            <figure> <img width="500" height="323" src="wp-content/uploads/2020/06/step01.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy"
+                                                                /></figure>
+                                                            <div class="content"> <small>  24th June, 2022 </small>
+                                                                <h3><a href="#">تطبيق شركة دوت فكس </a></h3>
+                                                                <div class="author post-author"> <img src="wp-content/uploads/2020/06/author00.jpg" alt="الرئيس التنفيذي"> <span>بواسطة <b>
+         محمد الديلمي         </b></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="recent-news-box ">
+                                                            <figure> <img width="500" height="323" src="wp-content/uploads/2020/06/thum3.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy"
+                                                                /></figure>
+                                                            <div class="content"> <small>  24th June, 2020 </small>
+                                                                <h3><a href="#">مبيعات دوت فكس و استقلالها</a></h3>
+                                                                <div class="author post-author"> <img src="wp-content/uploads/2020/06/ca92c11b1ad9c77b04ab4fbe508982f2.jpg" alt="مدير التسويق"> <span>بواسطة <b>
+         اميرة صادق          </b></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="recent-news-box ">
+                                                            <figure> <img width="500" height="323" src="wp-content/uploads/2020/06/5fd6a9a6bc40f21e518e27277e18bafb.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy"
+                                                                /></figure>
+                                                            <div class="content"> <small>  24th June, 2020 </small>
+                                                                <h3><a href="#">ميزات ستوجب عليك اخذها في المستقبل</a></h3>
+                                                                <div class="author post-author"> <img src="wp-content/uploads/2020/06/IMG-20220307-WA0006.jpg" alt="فريق التطوير"> <span>بواسطة <b>
+         فريق التطوير         </b></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end wrap-page -->
+    </main>
+    <section class="footer-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <figure class="logo"> <img src="wp-content/uploads/2020/06/logo copy.png" alt="Consto | Industrial Construction Company WordPress Theme"> </figure>
+                    <h2>تخيل <b>و</b> تحكم <b>في الخيال</b> </h2>
+                    <a href="tel:+967773877866" class="button">احصل على الاسعار الخدمات الثابتة <i class="lni lni-arrow-right"></i></a>
+                    <div class="sales-representive">
+                        <figure> <img src="wp-content/uploads/2020/06/1656259752648.jpg" alt=""> </figure>
+                        المدير المالي التنفيذي : عبدالله حسناين <b>+967 773 877 866</b> الاتصال مجاني ! </div>
+                </div>
+                <!-- end col-12  -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <footer class="footer" style="background-color: #0b0b0b">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="widget_text widget footer-widget">
+                        <h6 class="widget-title">الفرع الرئيسي</h6>
+                        <div class="textwidget custom-html-widget"><address>
+        <p><br>
+          </p>
+        <p></p>
+        <a href="" data-fancybox="" data-width="640" data-height="360" class="custom-link">اعثر على موقعنا عبر خرائط جوجل</a>
+        </address></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="widget_text widget footer-widget">
+                        <h6 class="widget-title">فرع المبيعات</h6>
+                        <div class="textwidget custom-html-widget"><address>
+        <p><br>
+</p>
+        <p></p>
+        <a href="" data-fancybox="" data-width="640" data-height="360" class="custom-link">اعثر على موقعنا عبر خرائط جوجل</a>
+        </address></div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="widget footer-widget">
+                        <h6 class="widget-title">الاشتراك</h6>
+                        <script>
+                            (function() {
+                                window.mc4wp = window.mc4wp || {
+                                    listeners: [],
+                                    forms: {
+                                        on: function(evt, cb) {
+                                            window.mc4wp.listeners.push({
+                                                event: evt,
+                                                callback: cb
+                                            });
+                                        }
+                                    }
+                                }
+                            })();
+                        </script>
+                        <!-- Mailchimp for WordPress v4.8.6 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
+                        <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-135" method="post" data-id="135" data-name="Newsletter">
+                            <div class="mc4wp-form-fields">
+                                <p>احصل على اخر التحديثات عبر الايميل
+                                </p>
+                                <input type="email" name="EMAIL" placeholder="Your email address" required />
+
+
+
+
+                                <input type="submit" value="اشترك" />
+                            </div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp"
+                                value="1661376360" /><input type="hidden" name="_mc4wp_form_id" value="135" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" />
+                            <div class="mc4wp-response"></div>
+                        </form>
+                        <!-- / Mailchimp for WordPress Plugin -->
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="footer-bottom"> <span>© 2020 جميع حقوق النشر و الملكية مع شركة دوت فكس</span>
+
+                        
+                    </div>
+                    <!-- end footer-bottom -->
+                </div>
+                <!-- end col-12 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+        <a href="#" class="scroll-top"><i class="lni lni-arrow-up"></i> <small>الصعود الى اعلى</small> </a>
+    </footer>
+    <script>
+        (function() {
+            function maybePrefixUrlField() {
+                if (this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+                    this.value = "http://" + this.value;
+                }
+            }
+
+            var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+            if (urlFields) {
+                for (var j = 0; j < urlFields.length; j++) {
+                    urlFields[j].addEventListener('blur', maybePrefixUrlField);
+                }
+            }
+        })();
+    </script>
+    <script type="text/html" id="wpb-modifications"></script>
+    <script src='wp-includes/js/dist/vendor/wp-polyfill.min.js' id='wp-polyfill-js'></script>
+    <script id='wp-polyfill-js-after'>
+        ('fetch' in window) || document.write('<script src="wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js"></scr' + 'ipt>');
+        (document.contains) || document.write('<script src="wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js"></scr' + 'ipt>');
+        (window.DOMRect) || document.write('<script src="wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js"></scr' + 'ipt>');
+        (window.URL && window.URL.prototype && window.URLSearchParams) || document.write('<script src="wp-includes/js/dist/vendor/wp-polyfill-url.min.js"></scr' + 'ipt>');
+        (window.FormData && window.FormData.prototype.keys) || document.write('<script src="wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js"></scr' + 'ipt>');
+        (Element.prototype.matches && Element.prototype.closest) || document.write('<script src="wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js"></scr' + 'ipt>');
+        ('objectFit' in document.documentElement.style) || document.write('<script src="wp-includes/js/dist/vendor/wp-polyfill-object-fit.min.js"></scr' + 'ipt>');
+    </script>
+    <script id='contact-form-7-js-extra'>
+        var wpcf7 = {
+            "api": {
+                "root": "http:\/\/consto.themezinho.net\/wp-json\/",
+                "namespace": "contact-form-7\/v1"
+            }
+        };
+    </script>
+    <script src='wp-content/plugins/contact-form-7/includes/js/index.js' id='contact-form-7-js'></script>
+    <script id='ppress-frontend-script-js-extra'>
+        var pp_ajax_form = {
+            "ajaxurl": "http:\/\/consto.themezinho.net\/wp-admin\/admin-ajax.php",
+            "confirm_delete": "Are you sure?",
+            "deleting_text": "Deleting...",
+            "deleting_error": "An error occurred. Please try again.",
+            "nonce": "7167efbfdc",
+            "disable_ajax_form": "false"
+        };
+    </script>
+    <script src='wp-content/plugins/wp-user-avatar/assets/js/frontend.min.js' id='ppress-frontend-script-js'></script>
+    <script src='wp-content/themes/consto/js/bootstrap.min.js' id='bootstrap-js'></script>
+    <script src='wp-content/themes/consto/js/fancybox.min.js' id='fancybox-js'></script>
+    <script src='wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min.js' id='isotope-js'></script>
+    <script src='consto.themezinho.net/wp-content/themes/consto/js/odometer.min.js' id='odometer-js'></script>
+    <script src='consto.themezinho.net/wp-content/themes/consto/js/swiper.min.js' id='swiper-js'></script>
+    <script id='consto-scripts-js-extra'>
+        var data = {
+            "pre_loader_typewriter": [],
+            "audio_source": "",
+            "enable_sound_bar": ""
+        };
+    </script>
+    <script src='wp-content/themes/consto/js/scripts.js' id='consto-scripts-js'></script>
+    <script src='wp-includes/js/wp-embed.min.js' id='wp-embed-js'></script>
+    <script src='wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js' id='wpb_composer_front_js-js'></script>
+    <script defer src='wp-content/plugins/mailchimp-for-wp/assets/js/forms.js' id='mc4wp-forms-api-js'></script>
+    <script src="//code.jivosite.com/widget/lNHgYjgm1A" async></script>
+</body>
+
+</html>
